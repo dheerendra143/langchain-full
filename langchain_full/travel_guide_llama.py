@@ -36,7 +36,6 @@ if city and month and language and budget:
     # resource = chat.chain.invoke(query)
     # st.write(resource.content)
     input_prompt = prompt_template.format(city=city, month=month, language=language, budget=budget)
-    print(input_prompt)
     resource = chat.llm.stream(input_prompt)
     # with st.container(height=300):  # Adjust height as needed
     st.write_stream(resource)
