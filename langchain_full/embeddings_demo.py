@@ -14,4 +14,5 @@ question = st.text_input(
 
 if question:
     resource = chat.llm.embed_query(question)
+    print(resource)
     st.write_stream(resource)
