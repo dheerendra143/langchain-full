@@ -4,7 +4,7 @@ import streamlit as st
 from langchain_core.prompts import PromptTemplate, ChatPromptTemplate
 
 import llm.config.main_ollama as chat
-import llm.propts.speechGenerator as code_prompt
+import llm.prompts.speechGenerator as code_prompt
 
 
 prompt_template1 = PromptTemplate(
