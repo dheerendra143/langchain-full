@@ -4,7 +4,7 @@ import streamlit as st
 from langchain_core.prompts import PromptTemplate, ChatPromptTemplate
 
 import llm.config.main as chat
-import llm.propts.travelGuide as code_prompt
+import llm.prompts.travelGuide as code_prompt
 
 
 prompt_template = PromptTemplate(

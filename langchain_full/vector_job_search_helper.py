@@ -2,6 +2,9 @@
 
 import streamlit as st
 from langchain_core.prompts import PromptTemplate, ChatPromptTemplate
+from langchain.document_loaders import TextLoader
+from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain.vectorstores import Chroma
 
 import llm.config.main_ollama as chat
 import llm.prompts.speechGenerator as code_prompt
